@@ -1,0 +1,43 @@
+public class variables_in_java {
+    public static void main(String args[]){
+        int a=18;
+        int b=12;
+        System.out.println(a);//return the value of a i.e."18"
+        System.out.println(b);//return the value of b i.e."12"
+
+        //now the addition of a & b:-
+        int sum=a+b;
+        System.out.println(sum);//here the output will be 30
+
+        //now assigning a as 28 from 18:-
+       
+        a=28;//now the values has changed
+        System.out.println(a);
+         /*NOTE:-
+         int a= 28;
+        ->here it will give an error because 
+        here we assigning a new variable & 
+        not updating any predefined variable in a program
+        */
+
+        
+        //now assigning 'a' as 'b' i.e. the value of 'a' becomes the the value of 'b':-
+        a=b;
+        System.out.println(a);//here it returns the value of a which has become "12" as 12 is the value of b
+
+
+        //creating a string variable and a character variable:-
+        //for character:-
+        char char1='d';
+        char char2='D';
+        System.out.println("char1: "+char1);//here it returns "d"
+        System.out.println("char2: "+char2);//here it returns "D"
+        //for string:-
+        String name= "SPIDERMAN";
+        System.out.println(name);//here it returns "SPIDERMAN"
+
+        
+
+
+    }
+}
