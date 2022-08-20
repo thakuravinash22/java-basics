@@ -1,0 +1,28 @@
+public class data_types_in_java {
+    public static void main(String args[]){
+        byte b=8;
+        char ch= 'a';
+        boolean var= false;
+        double price=10.5;
+        int number=85569;
+        //long
+        //float
+        short n=240;
+
+        //now print them all:-
+        System.out.println(b);
+        System.out.println(ch);
+        System.out.println(var);
+        System.out.println(price);
+        System.out.println(n);
+        System.out.println(number);
+          //it will return:-
+          8
+          a
+          false
+          10.5
+          240
+          85569
+
+    }
+}
