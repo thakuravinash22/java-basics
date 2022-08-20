@@ -1,0 +1,12 @@
+public class first_printpattern {
+    public static void main(String[]args){
+        System.out.print("****\n***\n**\n*");
+    }
+}
+/*
+another way to print the same pattern is as follow:-
+System.out.println("****");
+System.out.println("***");
+System.out.println("**");
+System.out.println("*");
+*/
