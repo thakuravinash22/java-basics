@@ -1,0 +1,33 @@
+import java.util.*;
+//import java.util.*--> it refers to importing a java package which has predeefind classes and more stuffs.
+//java has these type of many packages inside it.
+public class input_in_java {
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);//here we created an object and naming it "sc".
+        String input=sc.next();//here next is used for single word input
+        System.out.println(input);// here it will not return any thing after the space for example:-
+        //anshita tiwari(input)
+        //anshita(output)
+         String input=sc.nextLine();//multi word input
+         System.out.println(input);
+        //here it will return multiple words even a paragraph, example:-
+        //who the hell are you(input)
+        //who the hell are you(output)
+        
+           /*
+        int number=sc.nextInt();//for integer input
+        System.out.println(number);
+        */
+
+        /*
+        float price=sc.nextFloat();
+        System.out.println(price);
+        */
+        /* 
+        boolean var=sc.nextBoolean();
+        System.out.print(var);
+        */
+        byte num=sc.nextByte();
+        System.out.println(num);
+    }
+}
