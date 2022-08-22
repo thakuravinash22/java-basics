@@ -1,0 +1,7 @@
+public class sum_in_java {
+    public static void main(String args[]){
+        int a,b,sum;
+        a=5;b=10;sum=a+b;
+        System.out.println(sum);//here it returns sum of a&b.
+    }
+}
