@@ -1,0 +1,20 @@
+import java.util.*;
+public class product_input {
+    public static void main(String args[]){
+    
+        Scanner scan=new Scanner(System.in);//most important to call a scanner class
+        
+        System.out.print("value of a=");
+        int a=scan.nextInt();
+        System.out.print("value of b=");
+        int b=scan.nextInt();
+        int product=a*b;
+        System.out.println("the product will be "+product);
+    }
+}
+/*
+the output will be:-
+value of a=7
+value of b=7
+the product will be 49
+*/
