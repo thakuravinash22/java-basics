@@ -1,0 +1,27 @@
+import java.util.*;
+public class sum_in_java {
+    public static void main(String args[]){
+        /*
+        int a,b,sum;
+        a=5;b=10;sum=a+b;
+        System.out.println(sum);//here it returns sum of a&b.
+        */
+
+        Scanner sc=new Scanner(System.in);//most important line for the input
+
+        System.out.print("value of a=");
+        int a=sc.nextInt();
+        System.out.print("value of b=");
+        int b=sc.nextInt();
+        int sum=a+b;
+        System.out.println("the sum will be "+sum);
+    
+    /*
+    output will be:-
+    value of a=(input-8)
+    value of b=(input-9)
+    the sum will be 17(output)
+    */
+        
+    }
+}
