@@ -1,0 +1,18 @@
+import java.util.*;
+public class area_of_circle {
+    public static void main(String args[]){
+    Scanner scan=new Scanner(System.in);
+
+    System.out.print("enter the value of r=");
+
+    int r= scan.nextInt();
+    int area=22/7*r*r;
+    
+    System.out.print("the area of the circle of the given radius is ="+ area);
+}
+}
+/*
+it returns:-
+enter the value of r=8
+the area of the circle of the given radius is =192
+*/
