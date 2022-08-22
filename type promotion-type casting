@@ -1,0 +1,23 @@
+public class type_promotion_in_java {
+    public static void main(String args[]){
+        int ch='a';
+        System.out.println(ch);
+        byte a=4;
+        short b=3;
+        int c=6;
+        byte bt=(byte)(a+b+c+ch);//type casting otherwise it will return an error
+        System.out.println(bt);
+
+        byte x=3;
+        byte y=7;
+        byte z=(byte)(x+y);//explicit conversion/type casting
+        System.out.println(z);
+
+    }
+}
+/*note:-In any expression java automatically promotes the data
+ type to the biggest one to handle the lossy conversion.
+ 
+ -> java promotes byte,short & char operand to int & 
+     long,float & double to double.
+ */
