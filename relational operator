@@ -1,0 +1,22 @@
+public class relational_operators {
+    public static void main(String args[]){
+        int a=10;
+        int b=10;
+        System.out.println(a>b);
+        System.out.println(a<b);
+        System.out.println(a==b);
+        System.out.println(a!=b);
+        System.out.println(a<=b);
+        System.out.println(a>=b);
+
+    }
+}
+/*
+output:-
+false//for a>b as a is not greater than b 
+false
+true//as both are equal
+false//as both are equal but we asked for unequality
+true// as a is not less than b but a is equal to b
+true
+*/
