@@ -1,0 +1,35 @@
+import java.util.*;
+public class arithmetic_operator {
+    public static void main(String args[]){
+        int a=10;
+        int b=3;
+        
+        //binary operators
+        System.out.println("sum is equal to "+(a+b));
+        System.out.println("sub is equal to "+(a-b));
+        System.out.println("mul is equal to "+(a*b));
+        System.out.println("div is equal to "+(a/b));
+        System.out.println("modulo(remainder) is equal to "+(a%b));
+
+        //unary operators
+        int num1=25;
+        int num2=num1++;
+        System.out.println(num1);//here num1 is incremented by num2
+        System.out.println(num2);//but num2 is not incremented yet
+
+        int num3=++num1;
+        System.out.println(num3);//in num3, num1 is 26 as num2 incremented it to 26 earlier, and now num3 first increment it by 1 andd printed it 27
+    }
+}
+
+/*
+output:-
+sum is equal to 13
+sub is equal to 7
+mul is equal to 30
+div is equal to 3
+modulo(remainder) is equal to 1
+26
+25
+27
+*/
