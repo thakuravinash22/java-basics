@@ -1,0 +1,19 @@
+public class logical_operators {
+    public static void main(String args[]){
+        int a=07;
+        int b=10;
+        System.out.println(a>b && a<b);
+        System.out.println(a<=b && a<b);
+        System.out.println(a>b || a<b);
+        System.out.println(a>b || a==b);
+        System.out.println(!(a>b));
+    }
+}
+/*
+output:-
+false//as one statement is wrong as a is not greater than b
+true//as both the statements are correct
+true//as one statement is correct as b is greater than a
+false//both the statement is incorrect
+true// as a is not greater than b that was true but "logical not" returns opposite 
+*/
