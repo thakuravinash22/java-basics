@@ -1,0 +1,51 @@
+import java.util.*;
+public class switch_statement_calculator_program {
+    public static void main(String args[]){
+        Scanner scan=new Scanner(System.in);
+
+        //calculator program by using switch statement:-
+
+        System.out.print("1st number =");
+        int num1=scan.nextInt();
+        System.out.print("2nd number =");
+        int num2=scan.nextInt();
+
+        System.out.print("which operator: ");
+        char operator=scan.next().charAt(0);
+
+        switch(operator){
+            case '+':System.out.println(num1+num2);break;
+            case '-':System.out.println(num1-num2);break;
+            case '*':System.out.println(num1*num2);break;
+            case '/':System.out.println(num1/num2);break;
+            case '%':System.out.println(num1%num2);break;
+        }
+
+    }
+}
+/*
+output:-
+for addition:-
+1st number =75
+2nd number =25
+which operator: +
+100
+
+for subtraction:-
+1st number =75
+2nd number =25
+which operator: -
+50
+
+for multiplication:-
+1st number =25
+2nd number =25
+which operator: *
+625
+
+for remainder:-
+1st number =75
+2nd number =30
+which operator: %
+15
+*/
