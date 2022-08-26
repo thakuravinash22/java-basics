@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class conditional_statements {
+    public static void main(String args[]){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("what's your age :");
+        int age=scan.nextInt();
+        
+        // simple if-else statement:-
+        if(age>=18 ){
+            // System.out.println("congrats now you are eligible for driving");
+            System.out.println("you are an adult");
+        }else{
+            System.out.println("sorry you are not an adult");
+        }
+
+        //if-if-else statement:-
+        
+        System.out.print("input the value :");
+        int value=scan.nextInt();
+        if(value==10){
+            System.out.println("1st if statement");
+        }if(value>=10){
+            System.out.println("2nd if statement");
+        }
+                                         //now from here it will consider an "if-else statement"
+        if(value>=30){
+            System.out.println("3rd if statement");
+        }else{
+            System.out.println("the 'else' statement");
+        }
+
+        //if-'else-if'-'else-if'-else ladder:-
+        
+        System.out.print("input the value :");
+        int val=scan.nextInt();
+        if(val==10){
+            System.out.println("1st if statement");
+        }else if(val>=10){
+            System.out.println("2nd if statement");
+        }else if(val>=30){
+            System.out.println("3rd if statement");
+        }else{
+            System.out.println("the 'else' statement");
+        }
+    }
+}
+/*
+output:-
+what's your age :18
+you are an adult
+input the value :15
+2nd if statement
+the 'else' statement
+input the value :12
+2nd if statement
+*/
+
+//ternary statement and switch statement will go next.
