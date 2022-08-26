@@ -1,0 +1,17 @@
+import java.util.*;
+public class ternary_operator {
+    public static void main(String args[]){
+        Scanner scan=new Scanner(System.in);
+
+        System.out.print("input the number :");
+        int num=scan.nextInt();
+        
+        String number=((num%2)==0)?"even": "odd";//syntax
+        System.out.println(number);
+    }
+}
+/*
+output:-
+input the number :5555263
+odd
+*/
