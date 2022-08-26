@@ -1,0 +1,23 @@
+import java.util.*;
+public class income_tax_calculator {
+    public static void main(String args[]){
+        Scanner scan=new Scanner(System.in);
+
+        System.out.print("let me  know yor income: ");
+        int income=scan.nextInt();
+
+        if(income<500000){
+            System.out.println("you don't have to pay any tax.");
+        }else if(income>=500000 && income<1000000){
+            System.out.println("your tax is:"+0.2*income);
+        }else if(income>=1000000){
+            System.out.println("your tax is:"+0.3*income);
+        }
+
+    }
+}
+/*
+output:-
+let me  know yor income: 600000
+your tax is:120000.0
+*/
