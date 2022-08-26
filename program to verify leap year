@@ -1,0 +1,9 @@
+System.out.print("enter the year : ");
+        int year=scan.nextInt();
+
+        if(year%4==0 && (year%100!=0 || year%400==0)){
+            System.out.println("leap year");
+        }else{
+            System.out.println("not a leap year");
+        }
+        //if century year(eg.1900), is totally divisible by 400 then only it is a leap year
