@@ -10,6 +10,17 @@ public class reverse_of_a_number {
             int lastDigit=n%10;
             System.out.print(lastDigit);
             n=n/10;
+            
+           /*
+           another way to reverse the nnumber which is more efficient:-
+           
+           int rev=0;
+        while(n>0){
+            int lastDigit=n%10;
+            rev=(rev*10)+lastDigit;
+            n=n/10;
+        }System.out.println(rev);//here system will print the whole number which is reversed,not one by one.
+        */
         }
     }
 }
