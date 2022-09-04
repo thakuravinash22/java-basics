@@ -1,0 +1,58 @@
+
+public class do_whiile_loop_with_continue_and_break_statement {
+    public static void main(String args[]){
+    
+        // simple do while loop:-
+    
+        int i=1;
+        do{
+            System.out.println("* * * *");
+            i++;
+        }while(i<=5);
+        
+        //break statement:-
+        
+        do{
+            
+            System.out.println("* * * *");
+            if(i==4){
+                break;
+            }
+            i++;
+        }while(i<=5);
+
+        //continue statement:-
+       
+        for(int n=1;n<=10;n++){
+            if(n==6 || n==8){
+                continue;
+            }
+            System.out.println(n);
+        }
+
+
+    }
+}
+/*
+output:-
+      for simple do while statement:-
+* * * *
+* * * *
+* * * *
+* * * *
+* * * *
+       for break statement:-
+* * * *
+* * * *
+* * * *
+* * * *(line is broken after the value reached at 4.
+        
+        for continue statement:-
+1
+2
+3
+4
+5
+7(6 is skipped)
+9(8 is skipped)
+10
