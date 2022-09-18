@@ -1,0 +1,33 @@
+import java.util.*;
+public class sum_of_even_and_odd_integers {
+   public static void main(String args[]){
+        Scanner scan=new Scanner(System.in);
+       
+
+        int sum_of_odd=0;
+        int sum_of_even=0;
+        int number;
+        int choice;
+
+        do{
+         System.out.print("insert the number: ");
+          number=scan.nextInt();
+
+         if(number%2==0){
+            sum_of_even+=number;
+            // System.out.println("sum of even numbers till now is " +sum_of_even);
+         }else{
+            sum_of_odd+=number;
+            // System.out.println("sum of odd numbers till now is " +sum_of_odd);
+         }
+
+         System.out.println("press 1 to continue & 0 to terminate: ");
+         choice=scan.nextInt();
+         
+        }while(choice==1);
+
+        System.out.println("sum of even number is " +sum_of_even );
+        System.out.println("sum of odd number is " +sum_of_odd);
+
+   } 
+}
