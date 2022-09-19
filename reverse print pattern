@@ -1,0 +1,21 @@
+public class inverted_star_pattern {
+    public static void main(String args[]){
+    
+    //simple way:- 
+    
+        // for (int line=5; line>=1; line--){
+        //     for(int star=1; star<=line; star++){
+        //         System.out.print("*");
+        //     }System.out.println();
+        // }
+
+    //another way to print the reverse pattern:-
+        
+        int n=5;     //n refers to: how long the size of the pattern is(in how much line)
+        for(int line=1; line <=n; line++){
+            for(int star=1; star<=(n-line+1); star++){
+                System.out.print("*");
+            }System.out.println();
+        }
+    }
+}
