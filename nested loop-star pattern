@@ -1,0 +1,17 @@
+public class print_star_pattern {
+    public static void main(String args[]){
+        for(int line=1; line<=5; line++){//this loop runs for "how much lines"
+            for(int star=1; star<=line;star++){//this loop runs for "how much character in one line"
+            System.out.print("*");
+        }System.out.println();
+    }
+}
+}
+/*
+output:-
+*
+**
+***
+****
+*****
+*/
