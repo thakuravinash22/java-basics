@@ -1,0 +1,47 @@
+public class half_pyramid_pattern {
+    public static void main(String args[]){
+
+        for(int line=1; line <=5;line ++){
+            for(int i=1; i<=line;i++){
+                System.out.print(i);
+            }System.out.println();
+        }
+    }
+}
+/*
+output:-
+1
+12
+123
+1234
+12345
+*/
+
+
+
+/*
+for continuos numbers:-
+ 
+public class half_pyramid_pattern {
+    public static void main(String args[]){
+        
+     int num=1;
+        
+     
+      
+      for(int line=1; line <=5;line ++){
+            for(int i=1; i<=line;i++){
+                System.out.print(num);
+                num++;
+            }System.out.println();
+        }
+    }
+}
+
+output:-
+1
+23
+456
+78910
+1112131415
+*/
