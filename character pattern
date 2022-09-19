@@ -1,0 +1,22 @@
+public class character_pattern {
+    public static void main(String args[]){
+        char ch='A';
+        int n=5;
+
+        for(int line=1;line<=n;line++){
+            for(int i=1;i<=line;i++){
+                System.out.print(ch);
+                ch++;   //character updation
+            }System.out.println();
+        }
+
+    }
+}
+/*
+output:-
+A
+BC
+DEF
+GHIJ
+KLMNO
+*/
