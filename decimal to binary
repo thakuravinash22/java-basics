@@ -1,0 +1,21 @@
+public class decimal_to_binary {
+    public static void decToBin(int decNum){
+        int myNum=decNum;
+        int binNum=0;
+        int pow=0;
+        int rem;
+        while(decNum>0){
+            rem=decNum%2;
+            binNum=binNum+(rem*(int)Math.pow(10, pow));
+            pow++;
+            decNum=decNum/2;
+        }System.out.println("decimal number "+myNum+" is represented in binary as "+binNum);
+    }
+    public static void main(String args[]){
+        decToBin(8);
+    }
+}
+/*
+    output:-
+    decimal number 8 is represented in binary as 1000
+ */
