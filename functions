@@ -1,0 +1,141 @@
+import java.util.*;
+public class function {
+    
+    public static void printHelloWorld(){//function declaratiion
+        //void returns no value
+        for(int i=1; i<=5; i++){
+        System.out.println("hello world !");
+        }
+        return;//we may or may not use this return in the void return type of function.
+    }
+    public static int calculateSum(int num1, int num2){
+        int sum=num1+num2;
+        return sum;
+    }
+    public static int swapnum(int num1, int num2){
+        int temp=num1;
+        num1=num2;
+        num2=temp;
+        return num2;//here it will return the value of num2 which is swaped by num1.
+    }
+    public static void swap(int num1 ,int num2){
+        int temp=num1;
+        num1=num2;
+        num2=temp;
+        // System.out.println(num1);
+        // System.out.println(num2);//here it returns the correct swapped numbers
+    }
+    public static int factorial(int n){
+        int f=1;
+        for(int i=1; i<=n; i++){
+            f=f*i;
+        
+        }
+        return f;
+    }
+    public static int bin_coff(int n, int r){
+       int  n_fact=factorial(n);
+       int r_fact=factorial(r);
+       int nmr_fact=factorial(n-r);
+
+       int coff=n_fact/(r_fact*nmr_fact);
+       return coff;
+
+    }
+    public static int multiply(int num1,int num2){
+        return num1*num2;
+    }
+    public static int multiply(int num1,int num2,int num3){
+        return num1*num2*num3;
+    }
+    public static float multiply(float num1, float num2){
+        return num1*num2;
+    }
+
+    //normal isPrime function:-
+    /* 
+    public static boolean isPrime(int n){
+        //for n>=2 only
+        if(n==2){
+            return true;
+        }
+        for(int i=2; i<=n-1; i++){
+            if(n%i==0){
+                return false;
+            }
+            
+        }
+        return true;
+        
+    }
+    */
+
+    //optimised isprime function:-
+    public static boolean isPrime(int n){
+        if(n==2){
+            return true;
+        }
+        for(int i=2; i<=Math.sqrt(n);i++){
+            if (n%i==0){
+                return false;
+            }
+        }return true;
+    }
+    //is prime in range:-
+    public static void primesInRange(int num){
+        int sum=0;
+        for (int i=2;i<=num;i++){
+            if(isPrime(i)){
+                System.out.println(i);
+                sum++;
+            }
+        }System.out.println();
+        System.out.println(sum);
+    }
+
+    public static void main(String args[]){
+
+            // printHelloWorld();//function call
+            // int sum=calculateSum(4, 7);
+            // System.out.println(sum);
+            // System.out.println("the sum will be "+calculateSum(3, 7));//another way
+            // System.out.println(swapnum(3, 4));
+
+            //swap values-exchange:-
+            // int a=4,b=7;
+            // swap(a, b);
+            // System.out.println(a);
+            // System.out.println(b);
+            /*
+            it return the original value of a and b
+            because in call stack, when the main function 
+            called the swap function it occurss in above stack frame
+            and when the swap function vanishes it also vanishes the changes
+            that were made inside the swap function because of "call by value operation", 
+            so in main function it returns the original value of the numbers which is expected to be swapped
+
+            */
+            // System.out.println(factorial(4));
+            
+            //binomial coefficient:-
+            // System.out.println( bin_coff(5,2));
+
+            //function overloading using parameters:-
+            // System.out.println(multiply(3,4));
+            // System.out.println(multiply(3,4,7));
+
+            //function overloading using data types:-
+            // System.out.println(multiply(3, 2));
+            // System.out.println(multiply(3.2f, 2.2f));
+
+            //if a number is prime or not:-
+            // System.out.println(isPrime(7));
+
+            //primes in range:-
+            primesInRange(100);
+
+
+
+
+    }
+}
