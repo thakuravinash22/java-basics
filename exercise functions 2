@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+import javax.print.attribute.standard.PDLOverrideSupported;
+
+public class excercise_functions {
+    public static int average(int num1, int num2, int num3){
+        int average=(num1+num2+num3)/3;
+        return average;
+    }
+    public static boolean isEven(){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("n = " );
+        int n=scan.nextInt();
+        if(n%2==0){
+            return true;
+        }
+        return false;
+
+    }
+    public static boolean palindrome(int n){
+        
+        int lastDigit;
+        int rev=0;
+        
+        int num=n;
+        while(n>0){
+            lastDigit=n%10;
+            rev=(rev*10)+lastDigit;
+            n=n/10;
+
+        }
+        System.out.println(rev);
+        
+        if(rev==num){
+            return true;
+        }
+        return false;
+    }
+    public static int sumOfDigits(int num){
+        int sum=0;
+        while(num!=0){
+            int lastDigit=num%10;
+            sum+=lastDigit;
+            num=num/10;
+        }return sum;
+    }
+    public static void main(String args[]){
+        // System.out.println(average(3, 2, 6));
+        // System.out.println(isEven());
+        // int n=7896;
+        // if(palindrome(n)){
+        //     System.out.println("the number is palindrome.");
+        // }else{
+        //     System.out.println("uff the given number is not a palindrome");
+        // }
+        // System.out.println("exp of a is: " +(int)Math.exp(3));
+        // System.out.println(Math.abs(Math.round(6.7))); 
+        // System.out.println(Math.signum(-8));
+        // System.out.println(Math.nextDown(8.25));
+        // System.out.println(Math.toDegrees(97));
+           System.out.println(sumOfDigits(2345));
+        
+
+    }
+}
