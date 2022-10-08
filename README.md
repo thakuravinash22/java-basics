@@ -1,7 +1,7 @@
 # basics of java👾
 
 some basic programs that i've discovered during the process of learning java.
-
+you may create some pull requests
 
 
 
