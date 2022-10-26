@@ -1,0 +1,159 @@
+public class adv_pattern {
+    public static void hollowRectangle(int row, int col){
+        for(int i=1; i<=row; i++){
+            for(int j=1; j<=col; j++){
+                if(i==row || i==1 || j==col || j==1){
+                System.out.print("* ");
+                }else{
+                    System.out.print("  ");
+                }
+            }System.out.println();
+        }
+    }
+    public static void invRotHalfPyr(int size){
+        for (int i=1; i<=size; i++){
+            //spaces
+            for(int j=1;j<=size-i;j++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }System.out.println();
+        }
+    }
+    public static void rytAngTri(int row, int col){
+        for (int i=1; i<=row;i++){
+            for(int j=1; j<=i; j++){
+                System.out.print("* ");
+            }System.out.println();
+        }
+    }
+    public static void floydsTriangle(int size){
+        int num=1;
+        for(int i=1; i<=size;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(num);
+                num++;
+            }System.out.println();
+
+        }
+    }
+    public static void zero_one_triangle(int size){
+        for(int i=1; i<=size; i++){
+            for(int j=1;j<=i;j++){
+                if((i+j)%2==0){
+                    System.out.print("1");
+                }else{
+                    System.out.print("0");
+                }
+            }System.out.println();
+        }
+    }
+    public static void butterflyPtrn(int n){
+        //1st half
+        for (int i=1; i<=n; i++){
+            //stars
+            for(int j=1; j<=i;j++){
+                System.out.print("*");
+            }
+            //spaces
+            for(int j=1; j<=2*(n-i);j++){
+                System.out.print(" ");
+            }
+
+            //stars
+            for( int j=1; j<=i;j++){
+                System.out.print("*");
+            
+        }System.out.println();
+     }
+         //2nd half
+         for (int i=n;i>=1;i--){
+            //stars
+            for(int j=1; j<=i;j++){
+                System.out.print("*");
+            }
+            //spaces
+            for(int j=1; j<=2*(n-i);j++){
+                System.out.print(" ");
+            }
+
+            //stars
+            for( int j=1; j<=i;j++){
+                System.out.print("*");
+            
+        }System.out.println();
+
+         }
+    }
+    public static void solidRhombus(int n){
+        for(int i=1; i<=n;i++){
+            //space
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //star
+            for(int j=1;j<=n;j++){
+                System.out.print("*");
+            }System.out.println();
+        }
+    }
+    public static void hollowRhombus(int n){
+        
+        for (int i=1;i<=n;i++){
+            //spaces
+            for (int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=1;j<=n;j++){
+            if(i==1|| i==n||j==1||j==n){
+                System.out.print("*");
+            }else{
+                System.out.print(" ");
+            }
+        }System.out.println();
+        }
+    }
+    public static void diamondPtrn(int n){
+        //1st half
+        for(int i=1;i<=n;i++){
+            //spaces
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=1;j<=(2*i)-1;j++){
+                System.out.print("*");
+            }System.out.println();
+        }
+        //2nd half
+        for(int i=n; i>=1;i--){
+             //spaces
+             for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=1;j<=(2*i)-1;j++){
+                System.out.print("*");
+            }System.out.println();
+
+        }
+    }
+    public static void main(String args[]){
+        // hollowRectangle(4, 6);
+        // rytAngTri(4, 6);
+        // invRotHalfPyr(5);
+        // floydsTriangle(4);
+        // zero_one_triangle(5);
+        // butterflyPtrn(4);
+        // solidRhombus(4);
+        // hollowRhombus(4);
+        // diamondPtrn(4);
+
+
+
+
+    }
+}
