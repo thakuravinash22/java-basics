@@ -1,0 +1,31 @@
+import java.util.*;
+public class largest_and_smallest_in_the_array {
+    
+    //for finding the largest amount:-
+    public static int largest(int fees[]){
+        int largest=Integer.MIN_VALUE;
+        for(int i=0;i<fees.length;i++){
+            if(fees[i]>largest){
+                largest=fees[i];
+            }
+        }return largest;
+    }
+    //for finding the smallest amount:-
+    public static int smallest(int fees[]){
+        int smallest=Integer.MAX_VALUE;
+        for(int i=0;i<fees.length;i++){
+            if(fees[i]<smallest){
+                smallest=fees[i];
+            }
+        }return smallest;
+    }
+
+    
+    public static void main (String args[]){
+        int fees[]={1225,1250,1280,1290,1300,1500,2600};
+        int key=1290;
+        System.out.println("the largest amount of fees is "+ largest(fees));
+        System.out.println("the largest amount of fees is "+ smallest(fees));
+
+    }
+}
