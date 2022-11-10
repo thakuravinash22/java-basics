@@ -1,0 +1,24 @@
+import java.util.*;
+public class revAnArray {
+    public static void rev(int count[]){
+        int start=0,end=count.length-1;
+        while(start<end){
+            int temp;
+            temp=count[start];
+            count[start]=count[end];
+            count[end]=count[start];
+
+        start++;
+        end--;
+        }
+        
+    }
+    public static void main(String args[]){
+        int count[]={2,3,4,5,6,12};
+        rev(count);
+        for(int i=0;i<count.length;i++){
+            System.out.println(count[i]);
+        }
+        
+    }
+}
