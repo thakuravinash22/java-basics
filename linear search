@@ -1,0 +1,32 @@
+public class linearSearch {
+    public static int linearSearch(int marks[],int key){
+        for(int i=0;i<marks.length;i++){
+            if(marks[i]==key){
+                return i;
+            }
+        }return -1;
+    }
+    public static int lnSrch2(String menu[],String key){
+        for(int i=0;i<menu.length;i++){
+            if(menu[i]==key){
+                return i;
+            }
+        }return -1;
+    }
+    public static void main(String args[]){
+        int marks[]=new int[15];
+        int marks[]={45,56,85,66,54,63,89,56,0};
+        int key=99;
+        int index=linearSearch(marks, key);
+        if(index==-1){
+            System.out.println("not found");
+        }else{
+            System.out.println("the key is at index "+ index);
+        }
+        // String menu[]={"samosa","dosa","litti","idli"};
+        // String key="dosa";
+        // int index=lnSrch2(menu, key);
+
+
+    }
+}
